@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="MasterDetailPageNavigation.ContactsPage"
+             Title="New Release">
+	<ContentPage.Content>
+        <!-- StackLayout for background-->
+        <StackLayout x:Name="Background" BackgroundColor="AntiqueWhite">
+            <!-- Label for header-->
+            <Label Text="New Release" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" >
+            </Label>
+            <!-- StackLayout for boardgames-->
+            <StackLayout x:Name="SpaceForBoardGames" BackgroundColor="LightBlue">
+                <!-- Grid to align the  photo and detail-->
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <!-- set up row def-->
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <!-- set up column def-->
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Image for grid 0,0 and detail 0,1-->
+                    <Image x:Name="img1" Source="Gloomhaven.jpg" Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="Name: Gloomhaven" Grid.Row="0" Grid.Column="1" Margin="0,40,0,0" FontSize="Medium" FontAttributes="Bold"/>
+                    <Label Text="Years:2017" Grid.Row="0" Grid.Column="1" Margin="0,80,0,0" FontAttributes="Bold"/>
+                    <Label Text="Playing Time:60-120Min" Grid.Row="0" Grid.Column="1" Margin="0,100,0,0" FontAttributes="Bold"/>
+                    <Label Text="Category: Adventure,Exploration,Fantasy,Fighting,Miniatures" Grid.Row="0" Grid.Column="1" Margin="0,120,0,0" FontAttributes="Bold"/>
+                    <Label Text="Player:1-4 People" Grid.Row="0" Grid.Column="1" Margin="0,180,0,0" FontAttributes="Bold"/>
+
+                    <!-- second Image for grid 0,2 and detail for gird 0,3-->
+                    <Image x:Name="img2" Source="Brass.jpg" Grid.Row="0" Grid.Column="2"/>
+                    <Label Text="Name: Brass" Grid.Row="0" Grid.Column="3" Margin="0,40,0,0" FontSize="Medium" FontAttributes="Bold"/>
+                    <Label Text="Years:2018" Grid.Row="0" Grid.Column="3" Margin="0,80,0,0" FontAttributes="Bold"/>
+                    <Label Text="Playing Time:60-120Min" Grid.Row="0" Grid.Column="3" Margin="0,100,0,0" FontAttributes="Bold"/>
+                    <Label Text="Category: Economic, Industry" Grid.Row="0" Grid.Column="3" Margin="0,120,0,0" FontAttributes="Bold"/>
+                    <Label Text="Player:2-4 People" Grid.Row="0" Grid.Column="3" Margin="0,180,0,0" FontAttributes="Bold"/>
+
+                    <!-- Image for grid 1,0 and detail 1,1-->
+                    <Image x:Name="img3" Source="Teotihuacan.jpg" Grid.Row="1" Grid.Column="0"/>
+                    <Label Text="Name: Teotihuacan" Grid.Row="1" Grid.Column="1" Margin="0,40,0,0" FontSize="Medium" FontAttributes="Bold"/>
+                    <Label Text="Years:2018" Grid.Row="1" Grid.Column="1" Margin="0,80,0,0" FontAttributes="Bold"/>
+                    <Label Text="Playing Time:90-120Min" Grid.Row="1" Grid.Column="1" Margin="0,100,0,0" FontAttributes="Bold"/>
+                    <Label Text="Category: Ancient" Grid.Row="1" Grid.Column="1" Margin="0,120,0,0" FontAttributes="Bold"/>
+                    <Label Text="Player:1-4 People" Grid.Row="1" Grid.Column="1" Margin="0,160,0,0" FontAttributes="Bold"/>
+
+                    <!-- Image for grid 1,2 and detail 1,3-->
+                    <Image x:Name="img4" Source="RisingSun.jpg" Grid.Row="1" Grid.Column="2"/>
+                    <Label Text="Name: Rising Sun" Grid.Row="1" Grid.Column="3" Margin="0,40,0,0" FontSize="Medium" FontAttributes="Bold"/>
+                    <Label Text="Years:2018" Grid.Row="1" Grid.Column="3" Margin="0,80,0,0" FontAttributes="Bold"/>
+                    <Label Text="Playing Time:90-120Min" Grid.Row="1" Grid.Column="3" Margin="0,100,0,0" FontAttributes="Bold"/>
+                    <Label Text="Category: Alliance, Area Majority" Grid.Row="1" Grid.Column="3" Margin="0,120,0,0" FontAttributes="Bold"/>
+                    <Label Text="Player:3-5 People" Grid.Row="1" Grid.Column="3" Margin="0,160,0,0" FontAttributes="Bold"/>
+                    
+                </Grid>
+                <!-- close grid-->
+                
+                
+              
+                
+            </StackLayout>
+            <!-- close stacklayout-->
+
+        </StackLayout>
+        <!-- close stacklayout-->
+    </ContentPage.Content>
+    <!-- close content for contentpage-->
+</ContentPage>
+<!-- close contentpage-->
